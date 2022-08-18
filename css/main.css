@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 122px;
+}
+
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -113,6 +117,38 @@ header .fa-chevron-down {
 .aboutus .aboutus-card-text {
   font-size: 14px;
 }
+.aboutus .aboutus-hover {
+  transition: color 0.3s;
+}
+.aboutus .about-hover:hover {
+  color: #039dff;
+}
+
+.aboutus-hero {
+  position: relative;
+  background-image: url("/img/technology-2818664_640.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #ddd;
+  z-index: 0;
+}
+.aboutus-hero .aboutus-shadow {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+.aboutus-hero .aboutus-hero-item {
+  margin: 10px 0;
+}
+.aboutus-hero .aboutus-hero-item i {
+  font-size: 36px;
+}
+.aboutus-hero .aboutus-hero-item .aboutus-hero-title {
+  font-size: 24px;
+}
 
 @media (min-width: 375px) {
   header h1 {
@@ -130,8 +166,22 @@ header .fa-chevron-down {
     font-size: 20px;
   }
 }
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 82px;
+  }
+  .aboutus-hero {
+    background-image: url("/img/technology-2818664.jpg");
+  }
+}
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/gaming-2259191_1920.jpg");
+  }
+  html {
+    scroll-padding-top: 132px;
+  }
+  .about-us-hero {
+    background-image: url("./img/technology-2818664.jpg");
   }
 }/*# sourceMappingURL=main.css.map */

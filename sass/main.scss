@@ -7,21 +7,23 @@
 	margin: 0;
 	padding: 0;
 }
-
+html {
+	scroll-padding-top: 122px;
+}
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
 	background-color: #444;
 }
 h2 {
-    text-align: center;
-    text-transform: uppercase;
+	text-align: center;
+	text-transform: uppercase;
 }
 .underline {
-    margin: 0 auto;
-    width: 60px;
-    height: 4px;
-    background-color: $main-color;
+	margin: 0 auto 40px;
+	width: 60px;
+	height: 4px;
+	background-color: $main-color;
 }
 
 .blue-text {
@@ -33,8 +35,8 @@ h2 {
 }
 
 nav {
-    text-transform: uppercase;
-    transition: background-color .6s;
+	text-transform: uppercase;
+	transition: background-color 0.6s;
 	z-index: 1;
 
 	a,
@@ -114,19 +116,53 @@ header {
 	}
 }
 .aboutus {
-    i {
-        margin-top:20px;
-        font-size:30px;
-    }
-    .aboutus-card-title{
-        font-size:18px;
-        text-transform: uppercase;
-    }
-    .aboutus-card-text{
-        font-size: 14px;
-    }
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+	.aboutus-hover {
+		transition: color 0.3s;
+	}
+	.about-hover:hover {
+		color: $main-color;
+	}
 }
 
+.aboutus-hero {
+	position: relative;
+	background-image: url('/img/technology-2818664_640.jpg');
+	background-position: center;
+	background-size: cover;
+	color: $light-grey;
+	z-index: 0;
+
+	.aboutus-shadow {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -5;
+	}
+	.aboutus-hero-item{
+
+		margin: 10px 0;
+		i {
+			font-size:36px;
+
+		}
+		.aboutus-hero-title{
+			font-size:24px;
+		}
+	}
+}
 @media (min-width: 375px) {
 	header {
 		h1 {
@@ -150,11 +186,28 @@ header {
 		}
 	}
 }
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 82px;
+	}
+	.aboutus-hero {
+	
+		background-image: url('/img/technology-2818664.jpg');
+		
+	}
+}
 
 @media (min-width: 1200px) {
 	header {
 		.hero-img {
 			background-image: url('../img/gaming-2259191_1920.jpg');
 		}
+	}
+	html {
+		scroll-padding-top: 132px;
+	}
+
+	.about-us-hero {
+		background-image: url('./img/technology-2818664.jpg');
 	}
 }
