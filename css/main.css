@@ -269,6 +269,23 @@ header .fa-chevron-down {
   height: 160px;
 }
 
+.achievements i {
+  padding: 10px;
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 5px black;
+}
+.achievements .achievement-list {
+  padding: 20px 0;
+}
+.achievements .achievement-number {
+  font-size: 22px;
+}
+.achievements .achievement-text {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/gaming-2259191_1920.jpg");
