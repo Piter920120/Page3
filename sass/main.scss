@@ -132,7 +132,6 @@ header {
 	}
 	.about-hover:hover {
 		color: $main-color;
-
 	}
 }
 
@@ -152,79 +151,72 @@ header {
 		background-color: rgba(0, 0, 0, 0.7);
 		z-index: -5;
 	}
-	.aboutus-hero-item{
-
+	.aboutus-hero-item {
 		margin: 10px 0;
 		i {
-			font-size:36px;
-
+			font-size: 36px;
 		}
-		.aboutus-hero-title{
-			font-size:24px;
+		.aboutus-hero-title {
+			font-size: 24px;
 		}
 	}
-
 }
 .portfolio {
-	.carousel-item{
-		position:relative;
+	.carousel-item {
+		position: relative;
 		height: 600px;
-
 	}
-	.carousel-caption{
-		position:absolute;
+	.carousel-caption {
+		position: absolute;
 		left: 0;
 		right: 0;
 		padding: 40px 0;
-		background-color: rgba(0,0,0,.8);
+		background-color: rgba(0, 0, 0, 0.8);
 	}
 	.carousel-indicatiors {
-		padding-bottom:20px;
+		padding-bottom: 20px;
 	}
-	.card-img-top{
+	.card-img-top {
 		height: 10rem;
 	}
 }
 .prices {
-	.price-box{
+	.price-box {
 		margin: 20px 10px;
 		padding: 30px;
 		background-color: $white;
-		box-shadow: 5px 5px 5px rgba(0,0,0,.4);
-		transition: transform .3s;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+		transition: transform 0.3s;
 
-		h3{
+		h3 {
 			color: $main-color;
 			text-transform: uppercase;
 		}
-		span{
-			font-weight:bold;
+		span {
+			font-weight: bold;
 		}
-		i{
+		i {
 			font-size: 24px;
 			padding: 0 5px;
-
 		}
 		button {
 			padding: 10px 20px;
-			text-transform: uppercase;;
+			text-transform: uppercase;
 		}
-		.price-tag
-		{
+		.price-tag {
 			font-weight: bold;
 			font-size: 30px;
 		}
 	}
-	.price-box:hover{
+	.price-box:hover {
 		transform: scale(1.05);
 	}
-	.price-info{
-		margin-top:30px;
-		a{
+	.price-info {
+		margin-top: 30px;
+		a {
 			text-decoration: none;
 		}
 	}
-	
 }
 @media (min-width: 375px) {
 	header {
@@ -250,24 +242,60 @@ header {
 	}
 }
 @media (min-width: 992px) {
-	nav { 
+	nav {
 		height: 132px;
 	}
 	.aboutus-hero {
-	
 		background-image: url('/img/technology-2818664.jpg');
-		
 	}
-	.prices{
-		.price-ifno{
-			font-size:24px;
+	.prices {
+		.price-ifno {
+			font-size: 24px;
 		}
-
 	}
 }
 .team {
-	.card-img-top {
-		height: 220px;
+	position: relative;
+	background-image: url('/img/team/bgc.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+	
+
+	.team-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+		z-index: -5;
+		
+	}
+	h2 {
+		color: $light-grey;
+	}
+
+	.card {
+		
+		img {
+		height: 300px;
+		object-fit: cover;
+		
+		}
+	}
+	i {
+		padding: 10px;
+	}
+	.card:hover{
+		transform:scale(.96);
+	}
+	.card-title {
+		margin-bottom: 20px;
+		text-align:center;
+		text-transform: uppercase;
+	}
+	.card-body {
+		height: 160px;
 	}
 }
 
@@ -278,7 +306,7 @@ header {
 		}
 	}
 	// nav {
-		// height: 132px;
+	// height: 132px;
 	// }
 
 	.about-us-hero {
