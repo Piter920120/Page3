@@ -231,6 +231,10 @@ header .fa-chevron-down {
     font-size: 24px;
   }
 }
+.team .card-img-top {
+  height: 220px;
+}
+
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/gaming-2259191_1920.jpg");
